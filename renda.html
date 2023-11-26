@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Despesas</title>
+    <link rel="stylesheet" href="/css/despesas.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Bank.Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acesso_cadastro.html">Acesso/Cadastro</a></li>
+                <li><a href="despesas.html">Contas e Despesas</a></li>
+                <li><a href="#">Rendas e Investimentos</a></li>
+                <li><a href="visao_geral.html">Visão Geral</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="container">
+    <h2>Cadastro de Renda</h2>
+    <form id="formDespesa">
+        <label for="nomeDespesa">Nome da Receita:</label>
+        <input type="text" id="nomeDespesa" name="nomeDespesa" required>
+
+        <label for="valorDespesa">Valor:</label>
+        <input type="number" id="valorDespesa" name="valorDespesa" required>
+
+        <label for="dataDespesa">Data:</label>
+        <input type="date" id="dataDespesa" name="dataDespesa" required>
+
+        <button type="button" onclick="addDespesa()">Adicionar nova receita</button>
+    </form>
+
+    <ul id="listaDespesa"></ul>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Finanças Pessoais. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
