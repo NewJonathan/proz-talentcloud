@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento Financeiro</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Inclua o Bootstrap CSS (via CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Bank.me</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Acesso/Cadastro</a></li>
+                <li><a href="#">Contas e Despesas</a></li>
+                <li><a href="#">Rendas e Investimentos</a></li>
+                <li><a href="#">Visão Geral</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Adicione o carrossel -->
+<section id="hero" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" contentAlign="center">
+        <div class="carousel-item active">
+            <img src="despesas.jpg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+            <img src="image2.jpg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+            <img src="image3.jpg" class="d-block w-100" alt="Imagem 3">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</section>
+
+<section class="container">
+    <h2>Controle suas finanças pessoais de maneira eficiente</h2>
+    <p>Registre suas transações, crie orçamentos e obtenha relatórios detalhados para uma gestão financeira bem-sucedida.</p>
+    <a href="#" class="cta-button">Comece Agora</a>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Bank.me. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- Inclua o Bootstrap JS (via CDN) e o script para inicializar o carrossel -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Inicializa o carrossel
+    var myCarousel = new bootstrap.Carousel(document.querySelector('.carousel'), {
+        interval: 3000, // Intervalo entre as imagens em milissegundos (3 segundos neste exemplo)
+        wrap: true // Define se o carrossel deve reiniciar no final
+    });
+</script>
+
+</body>
+</html>
